@@ -5,6 +5,7 @@ WallysWatchesStore::Application.routes.draw do
   ActiveAdmin.routes(self)
   
   root :to => 'store#index'
+  match 'about' => 'store#about', :as => :about, :via => :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
