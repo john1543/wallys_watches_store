@@ -6,6 +6,7 @@ WallysWatchesStore::Application.routes.draw do
   
   root :to => 'store#index'
   match 'about' => 'store#about', :as => :about, :via => :get
+  match 'contact' => 'store#contact', :as => :contact, :via => :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
