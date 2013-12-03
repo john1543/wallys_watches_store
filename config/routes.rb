@@ -1,4 +1,6 @@
 WallysWatchesStore::Application.routes.draw do
+  get "products/index"
+
   get "store/index"
 
   devise_for :admin_users, ActiveAdmin::Devise.config
