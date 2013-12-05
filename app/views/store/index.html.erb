@@ -9,8 +9,11 @@
     <li>All Products</li>
   </ul>
   <div id = "search">
-    <%=text_field_tag "search" %>
-    <%=submit_tag "search"%>
+  <%= form_tag search_results_path do%>
+    <%=text_field_tag :keywords %>
+    <%=select_tag :category_search, options_for_select(@categories.collect{ |category| [category.name, category.id] }) %>
+    <%=submit_tag 'Search'%>
+  <%end%>
   </div>
 </header>
 <body>

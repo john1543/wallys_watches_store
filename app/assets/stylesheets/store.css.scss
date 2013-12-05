@@ -50,6 +50,7 @@ header h2
 }
 .product p
 {
+    color:#FFFFFF;
     height:220px;
 }
 .product img
@@ -74,10 +75,14 @@ li
     color:#FFFFFF;
     background:#000000;
 }
-
-div#search
+form
 {
     padding-left:900px;
+}
+input
+{
+    width:90px;
+    margin-left:-100px;
 }
 .links
 {
