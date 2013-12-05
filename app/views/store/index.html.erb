@@ -17,12 +17,20 @@
   </div>
 </header>
 <body>
+  <h2>Product On Sale !</h2>
   <div class = "new_product">
+    <p><%= image_tag @sale.image_name%><br />
+      <b>Name: </b> <%= @sale.name %><br />
+      <b>Description: </b><%=@sale.description%><br />
+      <b>Price: </b>$<%=@sale.price%><br />
+      <b>Stock: </b> <%=@sale.stock_quantity%><br />
+    </p>
+    <button>Add to cart</button>
+  </div>
    <h2>Latest Products</h2>
    <ul class = "latest_products">
       <%= render @products %>
    </ul>
-  </div>
 </body>
 <footer>
   <ul class = "links">
