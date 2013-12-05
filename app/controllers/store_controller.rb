@@ -1,6 +1,6 @@
 class StoreController < ApplicationController
   def index
-    @products = Product.last(4)
+    @products = Product.order("created_at DESC").limit(4)
     @categories = Category.all
     @sale = Product.first
   end
