@@ -5,6 +5,7 @@ class StoreController < ApplicationController
   end
   
   def search_results    
-    @product2 = Product.where('name LIKE ?',"(params[:keywords]%")
+    #@products = Product.where("name LIKE '%#{params[:keywords]}%' AND category_id = #{params[:search_category_names]}")
+    @products = Product.where("name LIKE'%#{params[:keywords]}%'")
   end
 end

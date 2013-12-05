@@ -58,13 +58,13 @@ header h2
     width: 90px;
     height: 100px;
 }
-ul
+.categories
 {
     display:block;
     margin:0px auto;
     padding-left:120px;
 }
-li
+.categories li
 {
     float:left;
     padding-left:20px;
@@ -93,11 +93,13 @@ input
 }
 .links li
 {
+   float:left;
     padding-left:20px;
     padding-right:20px;
     display:inline;
     margin:0px auto;
     border:1px solid #700;
+    color:#FFFFFF;
     background:#000000;
 }
 .links a
@@ -108,4 +110,8 @@ body
 {
     height:900px;
     background:#000;
+}
+div#products_found
+{
+    float:left;
 }

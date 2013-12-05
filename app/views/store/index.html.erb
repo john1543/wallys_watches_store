@@ -11,7 +11,7 @@
   <div id = "search">
   <%= form_tag search_results_path do%>
     <%=text_field_tag :keywords %>
-    <%=select_tag :category_search, options_for_select(@categories.collect{ |category| [category.name, category.id] }) %>
+    <%=select_tag :search_category_names, options_for_select(@categories.collect{ |category| [category.name, category.id] }) %>
     <%=submit_tag 'Search'%>
   <%end%>
   </div>
