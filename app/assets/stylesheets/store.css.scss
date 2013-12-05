@@ -1,3 +1,106 @@
 // Place all the styles related to the store controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html
+{
+    width:1200px;
+    height:900px;
+    margin:10px auto;
+    border:1px solid #A0A0A0;
+    background:#E8E8E8;
+}
+header
+{
+    margin:0px auto;
+}
+header img
+{
+    display:block;
+    margin:0px auto;
+}
+header strong
+{
+    padding-left:400px;
+    color:#FFFFFF;
+}
+header h2
+{
+    padding-top:40px;
+    padding-left:420px;
+    text-decoration:underline;
+}
+.new_product h2
+{
+    padding-left:420px;
+    text-decoration:underline;
+}
+.products
+{
+    padding-left:110px;
+}
+.product
+{
+    width:220px;
+    height:300px;
+    border:2px solid #000;
+    margin:10px;
+    padding:15px 5px;
+    float:left;
+    border:1px solid #700;
+}
+.product p
+{
+    height:220px;
+}
+.product img
+{
+    width: 90px;
+    height: 100px;
+}
+ul
+{
+    display:block;
+    margin:0px auto;
+    padding-left:120px;
+}
+li
+{
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    display:inline;
+    margin:0px auto;
+    border:1px solid #700;
+    color:#FFFFFF;
+    background:#000000;
+}
+
+div#search
+{
+    padding-left:900px;
+}
+.links
+{
+    display:block;
+    padding-left:450px;
+    list-style:none;
+    margin:0px auto;
+}
+.links li
+{
+    padding-left:20px;
+    padding-right:20px;
+    display:inline;
+    margin:0px auto;
+    border:1px solid #700;
+    background:#000000;
+}
+.links a
+{
+    color:#FFF;
+}
+body
+{
+    height:900px;
+    background:#000;
+}

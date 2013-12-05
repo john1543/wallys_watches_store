@@ -1,16 +1,23 @@
 <header>
-  <h1><%=image_tag "wallys_watches_store.png" %></h1>
+  <%=image_tag "wallys_watches_store.png" %>
   <strong>Wally's Watches is your source of wonderful watches</strong>
-</header>
-<body>
   <h2>Product Categories</h2>
   <ul class = "categories">
     <li>Sports Watches</li>
-    <li>Digital Watches</li>
     <li>Luxury Watches</li>
     <li>Special Design Watches</li>
+    <li>All Products</li>
   </ul>
+  <div id = "search">
+    <%=text_field_tag "search" %>
+    <%=submit_tag "search"%>
+  </div>
+</header>
+<body>
+  <div class = "new_product">
+   <h2>Latest Products</h2>
   <%= render @products %>
+  </div>
 </body>
 <footer>
   <ul class = "links">

@@ -1,11 +1,12 @@
-<div class = "product">
-  <h4>
-    <b><%=product.name %>
-  </h4>
-  <p><%= image_tag product.image_name%><br />
-  <b>Description: </b><%=product.description%><br />
-  <b>Price: </b>$<%=product.price%><br />
-  <b>Stock: </b> <%=product.stock_quantity%><br /></p>
-  <button>Add to cart</button>
-  
+<div class = "products">
+  <div class = "product">
+    <h4>
+      <b><%=product.name %></b>
+    </h4>
+    <p><%= image_tag product.image_name%><br />
+    <b>Description: </b><%=product.description%><br />
+    <b>Price: </b>$<%=product.price%><br />
+    <b>Stock: </b> <%=product.stock_quantity%><br /></p>
+    <button>Add to cart</button>
+  </div>
 </div>
