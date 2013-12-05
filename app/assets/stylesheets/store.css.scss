@@ -34,6 +34,10 @@ header h2
     padding-left:420px;
     text-decoration:underline;
 }
+.latest_products li
+{
+    display:inline;
+}
 .products
 {
     padding-left:110px;
@@ -62,7 +66,7 @@ header h2
 {
     display:block;
     margin:0px auto;
-    padding-left:120px;
+    padding-left:250px;
 }
 .categories li
 {
@@ -111,7 +115,18 @@ body
     height:900px;
     background:#000;
 }
+h1
+{
+    margin:0px auto;
+    text-align:center;
+    padding-right:20px;
+}
 div#products_found
 {
+    width:1050px;
     float:left;
+}
+.products_found li
+{
+    display:inline;
 }

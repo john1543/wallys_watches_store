@@ -6,6 +6,6 @@ class StoreController < ApplicationController
   
   def search_results    
     #@products = Product.where("name LIKE '%#{params[:keywords]}%' AND category_id = #{params[:search_category_names]}")
-    @products = Product.where("name LIKE'%#{params[:keywords]}%'")
+    @products = Product.where("name LIKE'%#{params[:keywords]}%' AND category_id = #{params[:search_category_names]}")
   end
 end
