@@ -10,6 +10,11 @@ WallysWatchesStore::Application.routes.draw do
   match 'about' => 'store#about', :as => :about, :via => :get
   match 'contact' => 'store#contact', :as => :contact, :via => :get
   match 'search_results' => 'store#search_results', :as => :search_results, :via => :post
+  match 'all_products' => 'store#all_products', :as => :all_products, :via => :get
+  match 'mechanical_watches' => 'store#mechanical_watches', :as => :mechanical_watches, :via => :get
+  match 'luxury_watches' => 'store#luxury_watches', :as => :luxury_watches, :via => :get
+  match 'special_design' => 'store#special_design', :as => :special_design, :via => :get
+  match 'sports' => 'store#sports_watches', :as => :sports_watches, :via => :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

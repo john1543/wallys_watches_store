@@ -3,11 +3,10 @@
   <strong>Wally's Watches is your source of wonderful watches</strong>
   <h2>Product Categories</h2>
   <ul class = "categories">
-    <li><%=link_to 'Sports Watches', sports_watches_path%></li>
-    <li><%=link_to 'Luxury Watches', luxury_watches_path%></li>
-    <li><%=link_to 'Special Design Watches',special_design_path %></li>
-    <li><%=link_to 'Mechanical Watches', mechanical_watches_path%></li>
-    <li><%=link_to 'All Products', all_products_path%></li>
+    <li>Sports Watches</li>
+    <li>Luxury Watches</li>
+    <li>Special Design Watches</li>
+    <li><%= link_to 'All Products', all_products_path%></li>
   </ul>
   <div id = "search">
   <%= form_tag search_results_path do%>
@@ -18,17 +17,7 @@
   </div>
 </header>
 <body>
-  <h2>Product On Sale !</h2>
-  <div class = "new_product">
-    <p><%= image_tag @sale.image_name%><br />
-      <b>Name: </b> <%= @sale.name %><br />
-      <b>Description: </b><%=@sale.description%><br />
-      <b>Price: </b>$<%=@sale.price%><br />
-      <b>Stock: </b> <%=@sale.stock_quantity%><br />
-    </p>
-    <button>Add to cart</button>
-  </div>
-   <h2>Latest Products</h2>
+   <h2>Products</h2>
    <ul class = "latest_products">
       <%= render @products %>
    </ul>
