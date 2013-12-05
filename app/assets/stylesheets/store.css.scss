@@ -12,6 +12,7 @@ html
 header
 {
     margin:0px auto;
+    padding-bottom:20px;
 }
 header img
 {
@@ -133,6 +134,8 @@ h1
     margin:0px auto;
     text-align:center;
     padding-right:20px;
+    color:#FFF;
+    text-decoration:underline;
 }
 div#products_found
 {
@@ -142,4 +145,32 @@ div#products_found
 .products_found li
 {
     display:inline;
+}
+
+.about
+{
+    margin-left:270px;
+    width: 500px;
+    color:#FFF;
+    padding:50px;
+}
+.about p
+{
+    border:1px solid #700;
+}
+.about h1
+{
+    text-decoration:underline;
+    color:#FFF;
+}
+.contact
+{
+    width:500px;
+    margin-left:320px;
+    border:1px solid #700;
+    color:#FFF;
+}
+footer
+{
+    padding-top:30px;
 }
